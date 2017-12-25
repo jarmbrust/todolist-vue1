@@ -7,14 +7,14 @@
 <script>
 import TodoInput from './todo-input'
 
-  export default {
-    components: {
-      TodoInput
-    },
-    name: 'TodoList'
+export default {
+  components: {
+    TodoInput
+  },
+  name: 'TodoList'
 }
 </script>
 
-<<style lang="scss" scoped>
+<style lang="scss" scoped>
 
 </style>

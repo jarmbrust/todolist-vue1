@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <router-link to="/">Go to main page</router-link>
     <router-link to="/TodoList">Go to todo list</router-link>
     <router-view/>
   </div>

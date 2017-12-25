@@ -5,8 +5,8 @@
 </template>
 
 <script>
-  export default {
-    name: 'TodoInput'
+export default {
+  name: 'TodoInput'
 }
 </script>
 
