@@ -1,12 +1,23 @@
 <template>
     <div class="input-field">
-        <input type="text" /><button class="enter-button btn btn-primary">Add Item</button>
+        <input type="text" v-model="listItem" /><button @click="addItem" class="enter-button btn btn-primary">Add Item</button>
+        <div> typed: {{ listItem }} </div>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'TodoInput'
+  name: 'TodoInput',
+  data () {
+    return {
+      listItem: ''
+    }
+  },
+  methods: {
+    addItem (value) {
+      this.$store.addItem = value
+    }
+  }
 }
 </script>
 
