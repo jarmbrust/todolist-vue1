@@ -1,9 +1,8 @@
 <template>
   <div>
-    <ul>
-      <li>list</li>
-      <li v-for="(item, index) in todoList" :key="item.id"> {{ item }}, {{ index }}
-        <button @click="completeItem(item)">X</button>
+    <ul class="todo-items">
+      <li class="list-item" v-for="(item, index) in todoList" :key="item.id"> {{ index }}: {{ item }}
+        <button class="btn btn-secondary x-button" @click="completeItem(item)">X</button>
       </li>
     </ul>
   </div>
@@ -23,7 +22,6 @@ export default {
   },
   methods: {
     completeItem (item) {
-      console.log('hi')
       this.$store.commit({
         type: 'REMOVE_TODO_ITEM',
         item: item
@@ -34,5 +32,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.list-item {
+  text-align: left;
+}
+.x-button {
+  text-align: right;
+  margin: 5px;
+}
 </style>

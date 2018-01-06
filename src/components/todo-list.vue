@@ -1,7 +1,13 @@
 <template>
-  <div>
-    <todo-input></todo-input>
-    <todo-items></todo-items>
+  <div class="container">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-6">
+        <todo-input></todo-input>
+        <todo-items></todo-items>
+      </div>
+      <div class="col"></div>
+     </div>
   </div>
 </template>
 
@@ -19,5 +25,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.todo-list-container {
+  max-width: 500px;
+}
 
 </style>

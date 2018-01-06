@@ -15,11 +15,11 @@ export default {
   },
   methods: {
     addItem () {
-      console.log('value', this.listItem)
       this.$store.commit({
         type: 'SET_TODO_ITEM',
         item: this.listItem
       })
+      this.listItem = ''
     }
   }
 }
@@ -27,6 +27,9 @@ export default {
 
 <style lang="scss" scoped>
   .input-field {
-    padding: 10px;
+    margin: 10px;
+  }
+  .enter-button {
+    margin: 20px;
   }
 </style>
