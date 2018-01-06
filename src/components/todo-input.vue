@@ -14,8 +14,12 @@ export default {
     }
   },
   methods: {
-    addItem (value) {
-      this.$store.addItem = value
+    addItem () {
+      console.log('value', this.listItem)
+      this.$store.commit({
+        type: 'SET_TODO_ITEM',
+        item: this.listItem
+      })
     }
   }
 }
