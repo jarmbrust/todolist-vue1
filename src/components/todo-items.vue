@@ -38,5 +38,6 @@ export default {
 .x-button {
   text-align: right;
   margin: 5px;
+  padding: 3px 7px 3px 7px;
 }
 </style>
